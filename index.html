@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>the codex</title>
+        <link rel="stylesheet" href="./Estilos/css/reset.css">
+        <link rel="stylesheet" href="./Estilos/css/style.css">
+    </head>
+
+    <body>
+      
+
+               
+        <div class="midPage">
+        <main class="container principal">
+
+            <section class="container interact">
+                <form action="#">
+                    <textarea id='input' class="intexto" rows=10 cols="50" spellcheck="false" placeholder="Digite a Mensagem"></textarea>               
+                    <textarea id='output' class="resposta" rows=10 cols="50" spellcheck="false" disabled></textarea>
+                </form>
+            </section>
+            
+            <section class="container opcoes">            
+                <select name="selecionar" class="selecao" onchange="abrir()" id="">
+                    <option value="none" disable selected>Selecione o Código</option>
+                    <option value="cifra">Cifra de César</option>
+                    <option value="base64">Base64</option>
+                </select>
+                <input type="number" min="0" max="25" class="passinho invisivel" placeholder="Digite a chave">
+                <input type="radio" checked name="opcao" onchange="mudar()">
+                <label for="opcao">Codificar</label>
+                <input type="radio" name="opcao" onchange="mudar()">
+                <label for="opcao">Decodificar</label>
+            </section>
+
+            <section class="divbtn">
+                <input type="submit" value="Codificar" class="actionbtn" id="botao--interact"  onclick="acao()">
+                <input type="reset" value="Resetar" class="actionbtn" id="botao--resetar"> 
+            </section>
+        </main>
+        </div>
+
+        <footer><p class="endPage">&copy; Raphael josé 2022</p></footer>
+                
+        <script src="./Estilos/js/index.js"></script>
+
+    </body>
+    
+</html>

@@ -1,0 +1,144 @@
+body {
+    width: 100%;
+    font-family: 'monotype corsiva', serif,yellow;    
+    font-size: 1rem;
+    background-image: url("https://i.gifer.com/NvL.gif");
+    height:100%;
+    width:100%;
+    }
+
+
+header{
+    margin-top: 0;
+    align-content: center;
+    
+    color: aquamarine;
+    padding: 20px 0;
+}
+
+
+nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a, h1 {
+	text-transform: uppercase;
+	color: rgb(188, 253, 7);
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+
+
+.container {
+    padding: 1.45rem 0;
+}
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .3rem;    
+}
+
+.input {
+margin-left: 50px;
+}
+
+.selecao{
+    color: yellowgreen;
+    background-color: black;
+    cursor: pointer;
+    grid-column: span 2;
+    font-size: 1.255;
+}
+
+.passinho{
+    width: 60%;
+    grid-column: span 2;
+    color:yellowgreen;
+    background-color: black;
+}
+
+.interact{
+    color:yellowgreen;
+    background-color: black;
+    align-self: center;
+    justify-self: center;
+    margin-top: auto;
+}
+
+.divbtn{
+align-self: center;
+}
+
+.actionbtn {
+    border-radius: 25%;
+    align-self: center;
+    justify-content: center;
+    margin-top: 1%;
+    width: 7rem;
+    height: 2rem;
+    background-color: black;
+    color: yellow;
+}
+
+label {
+    color: rgb(232, 248, 10);
+}
+
+form{
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    
+   
+}
+
+textarea {
+    padding:10%;
+    height: 20vh;
+    width: 70%;
+    resize: none;
+    font-family: inherit;
+    color: rgba(98, 250, 10, 0.884);
+    border: solid .1rem;
+    border-radius: 3%;
+    border-color: yellow;
+    place-self: center;
+    background-color: black;
+}
+
+button{
+    width: 7rem;
+    height: 2.3rem;
+}
+
+.endPage{
+    color: yellow;
+      position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: monospace;
+    text-align: center;
+}
+
+.invisivel{
+    display: none;
+}
