@@ -9,13 +9,18 @@ body {
 
 
 header{
-    margin-top: 0;
-    align-content: center;
-    
-    color: aquamarine;
-    padding: 20px 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
+.cabeca{
+    width: 15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 nav {
 	position: absolute;
@@ -45,6 +50,7 @@ nav a, h1 {
 
 .principal{
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
